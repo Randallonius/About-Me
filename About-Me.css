@@ -55,6 +55,8 @@ li {
   border-right: 1px solid;
 }
 
+
+
 a:link {
   text-decoration: none;
   color: grey;
@@ -70,6 +72,13 @@ a:hover {
   color: skyblue;
 }
 
+#contact {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  color: #247291;
+  text-decoration: underline;
+}
+
 #main-footer {
   border-bottom: solid 10px #247291;
   padding-top: 60px;
@@ -80,3 +89,5 @@ a:hover {
   width: 50%;
   margin: auto;
 }
+
+
