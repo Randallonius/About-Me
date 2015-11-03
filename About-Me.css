@@ -72,7 +72,7 @@ a:hover {
   color: skyblue;
 }
 
-#contact {
+#contact a {
   font-size: 40px;
   font-family: 'Poiret One', cursive;
   color: #247291;

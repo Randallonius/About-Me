@@ -76,6 +76,13 @@ a:hover {
   color: skyblue;
 }
 
+#about a {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  color: #247291;
+  text-decoration: underline;
+}
+
 form {
   color: black;
   text-align: left;
