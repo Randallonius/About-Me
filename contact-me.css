@@ -111,3 +111,13 @@ form {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+#time {
+  font-size: 20px;
+  color: #5a5a5a;
+  font-family: 'Poiret One', cursive;
+}
+
+button {
+  font-size: 18px;
+}

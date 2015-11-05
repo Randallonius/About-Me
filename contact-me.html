@@ -10,11 +10,28 @@
     <h1>Contact Me</h1>
     <h2>I know you want to...</h2>
   </header>
+    <span>
+
+<button onclick="myFunction()">What's your name?</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name");
+
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+    </span>
     <div class="first-column">
     <p>Here is where you can find me:</p>
       <ul>
         <li> <a href="https://www.linkedin.com/in/jonathanprandall">LinkedIn</a></li>
-        <li> <a href="https://www.facebook.com/jonathanprandall">Facebook</a></li>
+        <li> <ahref="https://www.facebook.com/jonathanprandall">Facebook</a></li>
         <li><a href="http://www.github.com/randallonius">Github</a></li>
       </ul>
     </div>
@@ -36,7 +53,27 @@
   </div>
       <footer id="main-footer" class="t-border">
       <p>&copy; Jonathan Randall 2015</p>
-      <a href="#top">Back to top &raquo;</a>
+      <a href="#top">Back to top &raquo;</a><br>
+    <span id="time">
+    <script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12)
+      {
+      document.write("<b>Have a good morning!</b>");
+      }
+    if (time > 12)
+      {
+      document.write("<b>Have a great afternoon!</b>");
+      }
+    if (time > 18)
+      {
+      document.write("<b>Have a great night!</b>");
+      }
+
+    </script>
+    </span></br>
     </footer>
   </body>
 </html>
