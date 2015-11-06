@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="About-Me.css">
+<link href='https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+      var accessGranted = false;
+      var entryQuestion = new Array("yes", "for sure", "ok");
+      while (!accessGranted) {
+      var username = prompt("Would you like to play the game?");
+      for (var index = 0; index < entryQuestion.length; index++) {
+        if (username == entryQuestion [index]) {
+          accessGranted = true;
+        }
+      }
+      if(accessGranted) {
+          alert("Welcome to the game!");
+        accessGranted = true;
+      } else {
+          alert("Sorry, this game is only for people who want to have fun.");
+      }
+      }
+</script>
+</head>
+
+<body id="top" class="guess-back">
+  <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Interests</a>
+              <ul>
+                <li><a href="">Traveling</a></li>
+                <li><a href="">Outdoors</a></li>
+                <li><a href="interests.html">Films</a></li>
+                <li><a href="">Music</a></li>
+              </ul>
+            </li>
+            <li><a href="">Guessing Game</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+        </ul>
+</nav>
+  <header>
+    <section>
+    <h1>Jonathan Randall</h1>
+    <h2>Programmer in training</h2>
+  </section>
+  </header>
+  <div id="guessing-title">
+    The Game!
+  </div>
+
+<button type="button" onclick="welcome()">How well do you know me?</button>
+
+<script type="text/JavaScript">
+function welcome() {
+    confirm("Don't worry, if you cant come up with the answers please check out the rest of my site to get to know me better.");
+    var question = prompt("Would you like to play?");
+    if (question == "yes") {
+      alert("Fantastic, lets start!");
+    } else {
+      alert("Have it your way then.");
+    }
+    var question = prompt("Which presidential candidate have I sort of worked for?");
+      if (question = "Donald Trump") {
+        alert("Congrats! Let's just keep our opinions of him to ourselves.");
+      } else {
+        alert("Crazy hair on top of a crazier guy. Still having trouble?");
+      }
+    var accessGranted = false;
+    var validUserNames = new Array("back to the future", "alien", "the empire strikes back", "the vengeance trilogy", "rocky");
+      while (!accessGranted) {
+    var question = prompt("What is one of my favorite films?");
+      for (var index = 0; index < validUserNames.length; index++) {
+        if (question == validUserNames [index]) {
+          accessGranted = true;
+        }
+      }
+      if(accessGranted) {
+          alert("Pretty great movie, wouldn't you agree?");
+        accessGranted = true;
+      } else {
+          alert("I handed them to you on a blue platter.");
+      }
+      }
+    var accessGranted = false;
+    var socialMedia = new Array("facebook", "linkedin", "instagram");
+      while (!accessGranted) {
+    var question = prompt("Which social media sites would you be able to find me on?");
+      for (var index = 0; index < socialMedia.length; index++) {
+        if (question == socialMedia [index]) {
+          accessGranted = true;
+        }
+      }
+      if(accessGranted) {
+          alert("Come and say hi to me there!");
+        accessGranted = true;
+      } else {
+          alert("Dont like to get out much, do you?");
+      }
+      }
+    var question = prompt("Given what you have learned about me, do I enjoy knitting?");
+    if(question == "no") {
+      alert("See, you do know me!");
+    } else {
+      alert("I would just start over. I'll be patient.");
+    }
+    confirm("Wasn't that fun? Thank you for playing!");
+}
+</script>
+</body>
+</html>
