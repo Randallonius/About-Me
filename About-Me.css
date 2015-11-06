@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -179,13 +178,7 @@ a.Job-links {
 
 }
 
-<<<<<<< HEAD
-
-
-a:link {
-=======
 a {
->>>>>>> 78d6b95... condensed css pages
   text-decoration: none;
   text-align: center;
   color: #247291;
@@ -223,19 +216,6 @@ form {
   border: 15px solid #5a5a5a;
 }
 
-<<<<<<< HEAD
-#contact a {
-  font-size: 40px;
-  font-family: 'Poiret One', cursive;
-  color: #247291;
-  text-decoration: underline;
-}
-
-#main-footer {
-  border-bottom: solid 10px #247291;
-  padding-top: 60px;
-  padding-bottom: 60px;
-=======
 .first-column {
   border: 15px solid #5a5a5a;
   border-radius: 10%;
@@ -251,7 +231,6 @@ form {
   border-radius: 10%;
   padding: 10px;
   height: 450px;
->>>>>>> 78d6b95... condensed css pages
 }
 
 .primary-content {
@@ -332,5 +311,3 @@ footer a {
   color: #65a3bb;
   font-family: 'Poiret One', cursive;
 }
-
-
