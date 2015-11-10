@@ -8,8 +8,13 @@
     window.alert("sending me your information may result in friendship");
     </script>
   </head>
-  <body>
-  <nav>
+  <body id="top">
+  <header id="container" class="contact-header">
+    <section id="logo">
+    <h1>Jonathan Randall</h1>
+    <h2>Programmer in training</h2>
+  </section>
+    <nav>
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="">Interests</a>
@@ -24,18 +29,11 @@
             <li><a href="contact-me.html">Contact</a></li>
         </ul>
 </nav>
-  <header class="contact-header">
-    <section>
-    <h1>Jonathan Randall</h1>
-    <h2>Programmer in training</h2>
-  </section>
   </header>
     <div class="page-title">
     Contact Me
   </div>
-    <span>
-</script>
-    </span>
+  <section class="contact-content">
     <div class="first-column">
     <p>Here is where you can find me:</p>
       <ul>
@@ -63,9 +61,10 @@
       <label class="contact-method" for="text_contact">Text: </label><input type="radio" name="contact-method" value="text" id="text_contact"><br>
       What would you like to talk about?<br>
       <textarea name="contact-topic"></textarea><br>
-      <input type="submit" value="Let's go!">
+      <input type="submit" value="Let's go!" onclick="sayThankYou(this.form.full_name.value)">
     </form>
   </div>
+</section>
 <footer>
       &copy; Jonathan Randall 2015
       <a href="#top">Back to top &raquo;</a>

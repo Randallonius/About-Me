@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="About-Me.css">
-<link href='https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
-      var accessGranted = false;
-      var entryQuestion = new Array("yes", "for sure", "ok");
-      while (!accessGranted) {
-      var username = prompt("Would you like to play the game?");
-      for (var index = 0; index < entryQuestion.length; index++) {
-        if (username == entryQuestion [index]) {
-          accessGranted = true;
-        }
-      }
-      if(accessGranted) {
-          alert("Welcome to the game!");
-        accessGranted = true;
-      } else {
-          alert("Sorry, this game is only for people who want to have fun.");
-      }
-      }
-</script>
-</head>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="About-Me.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+ var personName= prompt('Please enter your name, so we can get to know eachother better', ' ');
 
-<body id="top" class="guess-back">
-  <nav>
+ if ( (personName==' ') || (personName==null) )
+ {
+   personName="Buddy";
+ }
+</script>
+  </head>
+  <body id="top">
+  <header id="container" class="index-header">
+    <section id="logo">
+    <h1>Jonathan Randall</h1>
+    <h2>Programmer in training</h2>
+  </section>
+    <nav>
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="">Interests</a>
@@ -35,43 +30,42 @@
                 <li><a href="">Music</a></li>
               </ul>
             </li>
-            <li><a href="">Guessing Game</a></li>
+            <li><a href="guessing.html">Guessing Game</a></li>
             <li><a href="contact-me.html">Contact</a></li>
         </ul>
 </nav>
-  <header>
-    <section>
-    <h1>Jonathan Randall</h1>
-    <h2>Programmer in training</h2>
-  </section>
   </header>
-  <div id="guessing-title">
-    The Game!
-  </div>
-
-<button type="button" onclick="welcome()">How well do you know me?</button>
-
+  <div class="page-title">
+  <script>
+ document.write("<h1>Hey, " + personName + "!</h1>");
+</script>
+<h1>Welcome to My Game!</h1>
+<button onclick="welcome()">How well do you know me?</button>
+</div>
 <script type="text/JavaScript">
 function welcome() {
-    confirm("Don't worry, if you cant come up with the answers please check out the rest of my site to get to know me better.");
-    var question = prompt("Would you like to play?");
-    if (question == "yes") {
-      alert("Fantastic, lets start!");
-    } else {
-      alert("Have it your way then.");
-    }
-    var question = prompt("Which presidential candidate have I sort of worked for?");
-      if (question = "Donald Trump") {
-        alert("Congrats! Let's just keep our opinions of him to ourselves.");
-      } else {
-        alert("Crazy hair on top of a crazier guy. Still having trouble?");
-      }
+    confirm("All right, " + personName + ". Don't worry if the questions are tough. You'll be able to find all of the answers on my site. Have fun!");
     var accessGranted = false;
-    var validUserNames = new Array("back to the future", "alien", "the empire strikes back", "the vengeance trilogy", "rocky");
+    var Hair = new Array("the donald", "trump", "donald trump");
       while (!accessGranted) {
-    var question = prompt("What is one of my favorite films?");
-      for (var index = 0; index < validUserNames.length; index++) {
-        if (question == validUserNames [index]) {
+    var question = prompt("Which presidential candidate have I sort of worked for?");
+      for (var index = 0; index < Hair.length; index++) {
+        if (question.toLowerCase() == Hair [index]) {
+          accessGranted = true;
+        }
+      }
+      if(accessGranted) {
+        alert("Correct! You don't honestly think he would make a good president, do you " + personName + "?")
+      } else {
+        alert("I'll give you a hint: Bad hair...");
+      }
+    }
+    var accessGranted = false;
+    var movie = new Array("back to the future", "alien", "the empire strikes back", "star wars", "the vengeance trilogy", "rocky");
+      while (!accessGranted) {
+    var question = prompt("What's one of my favorite films?");
+      for (var index = 0; index < movie.length; index++) {
+        if (question.toLowerCase() == movie [index]) {
           accessGranted = true;
         }
       }
@@ -79,15 +73,15 @@ function welcome() {
           alert("Pretty great movie, wouldn't you agree?");
         accessGranted = true;
       } else {
-          alert("I handed them to you on a blue platter.");
+          alert('So a "boxer" and a "jedi" hop into a "Delorean" to go back in time to take "vengeance" on an "alien". Still need help?');
       }
       }
     var accessGranted = false;
-    var socialMedia = new Array("facebook", "linkedin", "instagram");
+    var socialMedia = new Array("facebook", "linkedin", "instagram", "all of them");
       while (!accessGranted) {
     var question = prompt("Which social media sites would you be able to find me on?");
       for (var index = 0; index < socialMedia.length; index++) {
-        if (question == socialMedia [index]) {
+        if (question.toLowerCase() == socialMedia [index]) {
           accessGranted = true;
         }
       }
@@ -95,17 +89,41 @@ function welcome() {
           alert("Come and say hi to me there!");
         accessGranted = true;
       } else {
-          alert("Dont like to get out much, do you?");
+          alert("Not quite what I was looking for. Maybe try to INSTAntly BOOK a trip with multiple LINKs to try to think of the answer?");
       }
       }
+    var accessGranted = false;
+    while (!accessGranted) {
     var question = prompt("Given what you have learned about me, do I enjoy knitting?");
-    if(question == "no") {
-      alert("See, you do know me!");
+    if(question.toLowerCase() == "no") {
+      alert("See, you do know me " + personName + "!");
+      accessGranted = true;
     } else {
-      alert("I would just start over. I'll be patient.");
+      alert("Now that I think of it, I haven't actually tried it but I'm looking for a 2 letter answer in this case.");
     }
+  }
     confirm("Wasn't that fun? Thank you for playing!");
+    window.location = "congrats.html";
 }
 </script>
+    <footer>
+      &copy; Jonathan Randall 2015
+      <a href="#top">Back to top &raquo;</a>
+    <span id="time">
+    <script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12)
+      {
+      document.write("<b>Have a good morning!</b>");
+      }
+    if (time > 12)
+      {
+      document.write("<b>Have a great day!</b>");
+      }
+    </script>
+    </span></br>
+    </footer>
 </body>
 </html>
