@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="About-Me.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+    window.alert("sending me your information may result in friendship");
+    </script>
+  </head>
+  <body id="top">
+  <header id="container" class="contact-header">
+    <section id="logo">
+    <h1>Jonathan Randall</h1>
+    <h2>Programmer in training</h2>
+  </section>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Interests</a>
+              <ul>
+                <li><a href="">Traveling</a></li>
+                <li><a href="">Outdoors</a></li>
+                <li><a href="interests.html">Films</a></li>
+                <li><a href="">Music</a></li>
+              </ul>
+            </li>
+            <li><a href="guessing.html">Guessing Game</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+        </ul>
+</nav>
+  </header>
+    <div class="page-title">
+    Contact Me
+  </div>
+  <section class="contact-content">
+    <div class="first-column">
+    <p>Here is where you can find me:</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/jonathanprandall"><img src="linkedin.jpg" class="social-icon"></a></li>
+        <li><a href="https://www.facebook.com/jonathanprandall"><img src="facebook.jpg" class="social-icon"></a></li>
+        <li><a href="http://www.instagram.com/randallonius"><img src="instagram.jpg" class="social-icon"></a></li>
+      </ul>
+    </div>
+    <div class="second-column">
+    <p>Now I want to know more about you.</p>
+    <form name="contact-me" action="thank-you.html" method="get">
+      <label for="contact_name">Your name:</label>
+        <input type="name" placeholder="First and Last Name" name="full_name" id="contact_name"><br>
+      <label for="contact_address">Contact address:</label>
+        <input type="contact" placeholder="Address, City and State" name="full_address" id="contact_address"></br>
+      <label for="phone_number">Tel phone #:</label>
+        <input type="phone" placeholder="(555)555-5555" name="phone number" id="phone_number"></br>
+      <label>Time of Day to contact</label>
+      <select name="time-of-day">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option valie="evening">Evening</option>
+      </select></br>
+      <label class="contact-method" for="email_contact">E-Mail: </label><input type="radio" name="contact-method" value="e-mail" id="email_contact"><br>
+      <label class="contact-method" for="text_contact">Text: </label><input type="radio" name="contact-method" value="text" id="text_contact"><br>
+      What would you like to talk about?<br>
+      <textarea name="contact-topic"></textarea><br>
+      <input type="submit" value="Let's go!" onclick="sayThankYou(this.form.full_name.value)">
+    </form>
+  </div>
+</section>
+<footer>
+      &copy; Jonathan Randall 2015
+      <a href="#top">Back to top &raquo;</a>
+    <span id="time">
+    <script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+    if (time < 12)
+      {
+      document.write("<b>Have a good morning!</b>");
+      }
+    if (time > 12)
+      {
+      document.write("<b>Have a great day!</b>");
+      }
+    </script>
+    </span></br>
+    </footer>
+  </body>
+</html>

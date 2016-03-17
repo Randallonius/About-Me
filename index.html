@@ -5,34 +5,72 @@
     <link rel="stylesheet" type="text/css" href="About-Me.css">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One|Roboto:400,700' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-  <header id="top" class="main-header">
-    <h1>All About Me</h1>
+  <body id="top">
+  <header id="container" class="index-header">
+    <section id="logo">
+    <h1>Jonathan Randall</h1>
+    <h2>Programmer in training</h2>
+  </section>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Interests</a>
+              <ul>
+                <li><a href="">Traveling</a></li>
+                <li><a href="">Outdoors</a></li>
+                <li><a href="interests.html">Films</a></li>
+                <li><a href="">Music</a></li>
+              </ul>
+            </li>
+            <li><a href="guessing.html">Guessing Game</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+        </ul>
+</nav>
   </header>
+  <div class="page-title">
+    About Me
+  </div>
+  <section class="primary-content">
       <img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/11018604_10102722198050305_8484761312815260855_n.jpg?oh=f8a34bf57851001564f4630ecb4c400b&oe=56B821EC" alt="Jon">
-  <div class="primary-content group">
+  <div>
     <div>
-    <h2>What do I like to do?</h2>
+    <h3>What do I like to do?</h2>
       <p>In my free time I like to spend time with my family by <a href="https://www.flickr.com/gp/136697982@N08/F4C40G">traveling</a> and other fun outdoor activities. <br>I'm also a bit of a film nerd that spends more time binging on movies and TV than I should.</br></p>
     </div>
     <div>
-    <h2>Where am I from?</h2>
+    <h3>Where am I from?</h2>
       <p>I am originally from Grand Rapids, MI. The area is known for it's natural beauty on the coast of Lake Michigan. <br>I have additionally spent some time in both Orlando, FL and New York, NY.</br></p>
     </div>
     <div>
-    <h2>What kinds of jobs have I had?</h2>
+    <h3>What kinds of jobs have I had?</h2>
       <p>Most of my career has been in Hotel Management. Here are a few of the properties I have worked at:
         <ul>
-          <li><a href="https://disneyworld.disney.go.com/resorts/contemporary-resort/">The Contemporary Resort at Walt Disney World</a></li>
-          <li><a href="https://www.trumphotelcollection.com/central-park/">The Trump International Hotel in New York City</a></li>
-          <li><a href="http://amwaygrand.com/">The Amway Grand Plaza Hotel in Grand Rapids, MI</a></li>
+          <li><a href="https://disneyworld.disney.go.com/resorts/contemporary-resort/" class="Job-links">The Contemporary Resort at Walt Disney World</a></li>
+          <li><a href="https://www.trumphotelcollection.com/central-park/" class="Job-links">The Trump International Hotel in New York City</a></li>
+          <li><a href="http://amwaygrand.com/" class="Job-links">The Amway Grand Plaza Hotel in Grand Rapids, MI</a></li>
         </ul>
       </p>
     </div>
   </div>
-    <footer id="main-footer" class="t-border">
-      <p>&copy; Jonathan Randall 2015</p>
+</section>
+    <footer>
+      &copy; Jonathan Randall 2015
       <a href="#top">Back to top &raquo;</a>
+    <span id="time">
+    <script type="text/javascript">
+    var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12)
+      {
+      document.write("<b>Have a good morning!</b>");
+      }
+    if (time > 12)
+      {
+      document.write("<b>Have a great day!</b>");
+      }
+    </script>
+    </span></br>
     </footer>
   </body>
 </html>
